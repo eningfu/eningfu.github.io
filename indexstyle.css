@@ -1,7 +1,6 @@
 html{
     box-sizing: border-box;
     height: 100%;
-
 }
 
 body {
@@ -16,7 +15,6 @@ body {
     height: inherit;
     justify-content: center;
 }
-
 
 .wrappingimage  {  
     float: left;   
