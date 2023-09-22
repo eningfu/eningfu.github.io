@@ -44,24 +44,25 @@ li a:hover {
 }
 
 .art {
-    background-color: #7a1391;
-    padding: 10px;
     margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
 }
 
 .music {
-    background-color: #ff2bbf;
-    padding: 10px;
     margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
 }
 
 .film {
-    background-color: #08013a;
-    padding: 10px;
     margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
 }
-
-
 a {
     color: inherit;
     text-decoration:none; 
@@ -83,4 +84,8 @@ hr {
 ::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255);
     border-radius: 10px;
+}
+
+.active {
+    background-color: #ffe3434c;
 }

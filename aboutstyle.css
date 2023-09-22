@@ -154,43 +154,43 @@ button{
 }
 
 .button1:hover {
-    background-color: #f3616e;
+    background-color: #f125a6;
     color: white;
 }
 .button2:hover {
-    background-color: #82e279;
+    background-color: #79e291;
     color: white;
 }
 .button3:hover {
-    background-color: #f3616e;
+    background-color: #f125a6;
     color: white;
 }
 .button4:hover {
-    background-color: #82e279;
+    background-color: #79e291;
     color: white;
 }
 .button5:hover {
-    background-color: #f3616e;
+    background-color: #f125a6;
     color: white;
 }
 .button6:hover {
-    background-color: #f3616e;
+    background-color: #f125a6;
     color: white;
 }
 .button7:hover {
-    background-color: #82e279;
+    background-color: #79e291;
     color: white;
 }
 .button8:hover {
-    background-color: #f3616e;
+    background-color: #f125a6;
     color: white;
 }
 .button9:hover {
-    background-color: #82e279;
+    background-color: #79e291;
     color: white;
 }
 .button10:hover {
-    background-color: #82e279;
+    background-color: #79e291;
     color: white;
 }
 
@@ -210,4 +210,8 @@ button{
 hr {
     color: white;
     border-style: solid;
+}
+
+.active {
+    background-color: #ffe3434c;
 }

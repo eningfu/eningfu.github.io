@@ -43,20 +43,63 @@ li a:hover {
     transition: 0.3s;
 }
 
+.wks {
+    margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+}
+
+
+
+.fe {
+    margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
+}
+
 .panels {
-    padding: 35px;
-    justify-content: space-between;
-    flex-direction: row;
     display: flex;
 }
 
-.fe {
-    background-color: #08013a71;
+.gallery {
+    border: 1px solid rgb(255, 251, 196);
+}
+  
+.gallery:hover {
+    border: 1px solid rgb(255, 229, 60);
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+  
+.responsive {
+    padding: 0 6px;
+    width: 50%;
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.desc {
-    font-size: 12px;
+.capa {
+    margin: 10px;
+    background-color: #08013a71;
+    padding: 10px 40px;
+    padding-bottom: 30px;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -74,4 +117,8 @@ li a:hover {
 hr {
     color: white;
     border-style: solid;
+}
+
+.active {
+    background-color: #ffe3434c;
 }
