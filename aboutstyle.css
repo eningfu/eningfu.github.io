@@ -94,6 +94,11 @@ a {
     text-decoration:none; 
 }
 
+h5 {
+    margin-bottom: 0px;
+    padding-top: 7px;
+}
+
 .icons {
     background-image: url("images/upper.png");
     background-size: 100%;
@@ -200,4 +205,9 @@ button{
 ::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255);
     border-radius: 10px;
+}
+
+hr {
+    color: white;
+    border-style: solid;
 }
