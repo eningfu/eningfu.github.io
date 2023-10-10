@@ -88,12 +88,14 @@ a {
 }
 
 .footer {
+    
     position: relative;
     text-align: center;
     color: white;
 }
 
 .footerimg {
+    margin-top: 5px;
     width: 100%;
 }
 
@@ -103,4 +105,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 40px #08013a85;
+}
+
+h4 {
+    margin-bottom: 5px;
 }
