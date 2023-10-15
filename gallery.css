@@ -77,3 +77,8 @@ hr {
 .active {
     background-color: #ffe3434c;
 }
+
+.responsive {
+    justify-content: space-between;
+    display: flex;
+}
