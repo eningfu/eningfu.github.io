@@ -87,6 +87,11 @@ li a:hover {
     width: 50%;
 }
   
+.responsivewhole {
+    padding: 0 6px;
+    width: 100%;
+}
+
 .clearfix:after {
     content: "";
     display: table;
@@ -99,8 +104,6 @@ li a:hover {
     padding: 10px 40px;
     padding-bottom: 30px;
 }
-
-
 
 ::-webkit-scrollbar {
     width: 10px;
