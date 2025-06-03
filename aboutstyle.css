@@ -154,45 +154,22 @@ button{
     cursor: pointer;
 }
 
+.button1 {
+    position: relative;
+    top: 17px; 
+}
+
 .button1:hover {
-    background-color: #f125a6;
+    background-color: #ffffffc6;
     color: white;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 20px rgba(255, 110, 180, 0.6);
 }
-.button2:hover {
-    background-color: #79e291;
+.button0:hover {
+    background-color: #ffffffc6;
     color: white;
-}
-.button3:hover {
-    background-color: #f125a6;
-    color: white;
-}
-.button4:hover {
-    background-color: #79e291;
-    color: white;
-}
-.button5:hover {
-    background-color: #f125a6;
-    color: white;
-}
-.button6:hover {
-    background-color: #f125a6;
-    color: white;
-}
-.button7:hover {
-    background-color: #79e291;
-    color: white;
-}
-.button8:hover {
-    background-color: #f125a6;
-    color: white;
-}
-.button9:hover {
-    background-color: #79e291;
-    color: white;
-}
-.button10:hover {
-    background-color: #79e291;
-    color: white;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 20px rgba(255, 110, 180, 0.6);
 }
 
 ::-webkit-scrollbar {
@@ -215,4 +192,8 @@ hr {
 
 .active {
     background-color: #ffe3434c;
+}
+
+svg {
+    width: 70%;
 }
