@@ -25,9 +25,7 @@ body {
     background-color: #0000006e;
   }
   
-li {
-    float: right;
-}
+li { float: right; }
   
 li a {
     display: block;
@@ -52,9 +50,7 @@ li a:hover {
     display: flex;
 }
 
-.helloimage {
-    width: 300px;
-}
+.helloimage { width: 300px; }
 
 .hs {
     border-radius: 50%;
@@ -69,24 +65,18 @@ li a:hover {
 a {
     color: inherit;
     text-decoration:none; 
-  }
-
-::-webkit-scrollbar {
-    width: 10px;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 100px rgb(255, 230, 0);
-}
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { box-shadow: inset 0 0 100px rgb(255, 230, 0); }
 
 ::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
-.active {
-    background-color: #ffe3434c;
-}
+.active { background-color: #ffe3434c; }
 
 .footer {
     position: relative;
@@ -107,9 +97,7 @@ a {
     text-shadow: 0 0 40px #08013a85;
 }
 
-/* h4 {
-    margin-bottom: 5px;
-} */
+/* h4 { margin-bottom: 5px; } */
 
 .options {
     display: flex;
@@ -122,6 +110,8 @@ a {
     cursor: pointer;
     transition: transorm 0.3s;
     font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 30px;
 }
 
 .options a:hover {
@@ -129,12 +119,58 @@ a {
     transition: transform 0.3s;
 }
 
-.goart:hover {
-    color: #7a1391;
+.goart:hover { color: #08013a; }
+.gocode:hover { color: #fffa65; }
+.gomys:hover { color: #000000; }
+
+.terminal {
+    width: 90%;
+    max-width: 600px;
+    background: #08013a6b;
+    color: #ff2bbf;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    margin: 40px auto 30px;
 }
-.gocode:hover {
-    color: #fffa65;
+
+.terminalheader {
+    background: #08013a6b;
+    border-bottom: 1px solid #ff2bbf;
+    padding: 8px;
+    display: flex;
+    gap: 6px;
 }
-.gomys:hover {
-    color: #08013a;
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminalbody { padding: 20px; }
+
+.typedline {
+    display: inline-block;
+    text-align: center;  
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #ff2bbf;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0%   { width: 0ch }
+    100%  { width: 16ch }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #ff2bbf }
 }
