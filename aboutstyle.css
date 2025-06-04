@@ -106,28 +106,10 @@ h5 {
     padding-bottom: 10px;
 }
 
-.fa-discord {
-   font-size: 45px;
+.fab {
+   font-size: 30px;
    margin-top: 15px;
    display: inline-block;
-}
-
-.fa-instagram {
-    font-size: 50px;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.fa-linkedin {
-    font-size: 50px;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.fa-github {
-    font-size: 50px;
-    display: inline-block;
-    margin-left: 10px;
 }
 
 .button-row{

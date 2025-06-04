@@ -89,7 +89,6 @@ a {
 }
 
 .footer {
-    
     position: relative;
     text-align: center;
     color: white;
@@ -108,6 +107,34 @@ a {
     text-shadow: 0 0 40px #08013a85;
 }
 
-h4 {
+/* h4 {
     margin-bottom: 5px;
+} */
+
+.options {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.options a {
+    cursor: pointer;
+    transition: transorm 0.3s;
+    font-weight: bold;
+}
+
+.options a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.goart:hover {
+    color: #7a1391;
+}
+.gocode:hover {
+    color: #fffa65;
+}
+.gomys:hover {
+    color: #08013a;
 }
