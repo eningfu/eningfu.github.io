@@ -104,3 +104,37 @@ a {
 footer {
   padding: 15px;
 }
+
+@media screen and (max-width: 900px)  {
+  .hello {
+    display: block;
+  }
+
+  .hello h1, .hello h2 {
+    text-align: center;
+  }
+
+  .gallery-item {
+    display: block;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .gallery-item p {
+    margin-top: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-top-right-radius: 0px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
