@@ -101,6 +101,11 @@ a {
   display: none;
 }
 
+.filter-buttons button.current {
+  background-color: black;
+  color: white;
+}
+
 footer {
   padding: 15px;
 }

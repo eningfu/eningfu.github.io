@@ -59,9 +59,9 @@
   <h1>Portfolio</h1>
 
   <div class="filter-buttons">
-    <button onclick="filterGallery('wd')">Coding</button>
-    <button onclick="filterGallery('ad')">Art & Design</button>
-    <button onclick="filterGallery('misc')">Miscellaneous</button>
+    <button id="wd"  onclick="filterGallery('wd')">Coding</button>
+    <button id="ad" onclick="filterGallery('ad')">Art & Design</button>
+    <button id="misc" onclick="filterGallery('misc')">Miscellaneous</button>
   </div>
 
   <div class="gallery">
@@ -166,6 +166,9 @@
   <script>
     function filterGallery(category) {
       const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-buttons button');
+      buttons.forEach(btn => btn.classList.remove('current'));
+      document.getElementById(category).classList.add('current');
       items.forEach(item => {
         item.classList.toggle('hidden', !item.classList.contains(category));
       });
