@@ -23,10 +23,31 @@ body {
   box-shadow: 0 0 50px rgb(236, 236, 236);
 }
 
-.helloimage { flex: 1; }
+.helloimage { 
+  flex: 1; 
+}
 
 .hs {
   border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.vinyl {
+  box-sizing: border-box;
+  border: 70px solid black;
+  animation: spin 3s linear infinite, glow 1.5s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #ffe100, 0 0 20px #ff2bbf; }
+  100% { box-shadow: 0 0 10px #ff2bbf, 0 0 20px #00eaff; }
 }
 
 .hellotext {
