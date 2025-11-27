@@ -131,6 +131,16 @@ a {
   box-shadow: 0 6px 20px #08013a71;
 }
 
+.ad {
+  gap: 10px
+}
+
+.ad img {
+  height: 300px;
+  width: 100%;
+}
+
+
 .hidden {
   display: none;
 }
@@ -179,5 +189,9 @@ footer {
 
   .hidden {
     display: none;
+  }
+
+  .ad img {
+    height: 100%;
   }
 }
