@@ -132,14 +132,18 @@ a {
 }
 
 .ad {
-  gap: 10px
+  display: block;
 }
 
-.ad img {
+.pic {
+  display: flex;
+  gap: 10px;
+}
+
+.ad video {
   height: 300px;
   width: 100%;
 }
-
 
 .hidden {
   display: none;
@@ -191,7 +195,7 @@ footer {
     display: none;
   }
 
-  .ad img {
+  .ad video {
     height: 100%;
   }
 }
