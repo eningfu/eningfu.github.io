@@ -9,15 +9,13 @@ body {
   font-family: "VT323", "Helvetica";
   font-size: large;
   color: rgb(50, 50, 50);
-  height: inherit;
   justify-content: center;
-  margin: 10%;
+  margin: 5% 10%;
 }
 
 .hello {
   flex-direction: row;
   display: flex;
-  margin: 50px 0px;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 50px rgb(236, 236, 236);
@@ -27,37 +25,10 @@ body {
   flex: 1; 
 }
 
-.hs {
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.vinyl {
-  box-sizing: border-box;
-  border: 70px solid black;
-  animation: spin 3s linear infinite, glow 1.5s infinite alternate;
-  cursor: pointer;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes glow {
-  0% { box-shadow: 0 0 10px #ffe100, 0 0 20px #ff2bbf; }
-  100% { box-shadow: 0 0 10px #ff2bbf, 0 0 20px #00eaff; }
-}
-
 .hellotext {
   text-align: left;
   margin-left: 30px;
   flex: 2;
-}
-
-.hellotext h1 {
-  margin-top: 0px;
 }
 
 a {
@@ -74,15 +45,24 @@ a {
   width: 50%;
 }
 
-.group h1 {
-  margin-top: 0px;
-}
-
 .svg-row svg, .svg-row img{
   width: 30px;
 }
 
-.filter-buttons button {
+.filter-buttons {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  max-width: 200px;
+}
+
+.filter-buttons button, .left button {
   border: 1px solid black;
   background-color: transparent;
   font-family: inherit;
@@ -91,9 +71,10 @@ a {
   padding: 10px;
   transition: 0.3s;
   margin-bottom: 15px;
+  width: 100%;;
 }
 
-.filter-buttons button:hover {
+.filter-buttons button:hover, .left button:hover {
   background-color: black;
   color: white;
   transition: 0.3s;
@@ -105,31 +86,33 @@ a {
 
 .gallery-item {
   width: 100%;
-  display: flex;
-  margin: 15px 0px;
+  /* display: flex; */
+  /* margin: 15px 0px; */
 }
 
 .gallery-item img {
   flex: 1;
-  width: 400px;
+  width: 100%;
   transition: 0.3s;
 }
 
 .gallery-item p {
+  margin: 0;
   flex: 1;
   padding: 30px;
-  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
-
+/* 
 .gallery img:hover {
   transform: scale(1.05) rotate(-1deg);
   transition: 0.3s;
   box-shadow: 0 6px 20px #08013a71;
-}
+} */
 
 .ad {
   display: block;
@@ -149,16 +132,32 @@ a {
   display: none;
 }
 
-.filter-buttons button.current {
+.filter-buttons button.current, .left button.current {
   background-color: black;
   color: white;
 }
 
 footer {
-  padding: 15px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 900px)  {
+  .row {
+    display: block;
+  }
+
+  .left {
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+
   .hello {
     display: block;
   }
@@ -195,7 +194,7 @@ footer {
     display: none;
   }
 
-  .ad video {
-    height: 100%;
+  .pic {
+    display: block;
   }
 }

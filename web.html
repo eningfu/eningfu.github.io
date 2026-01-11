@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="alt.css">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=VT323&family=Slackey&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>emily ning</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon (3).ico">
+</head>
+<body>
+    <div class="filter-buttons">
+      <button id="home"  onclick="location.href='index.html'">Home</button>
+      <button id="wd"  onclick="location.href='web.html'" class="current">Web Development</button>
+      <button id="ad" onclick="location.href='animation.html'">Animation</button>
+      <!-- <button id="misc" onclick="filterGallery('misc')">Miscellaneous</button> -->
+    </div>
+    
+    <div class="row">
+      <div class="left">
+        <button id="char" onclick="filterGallery('char')">Y2K-Style Character Wiki (2026)</button>
+        <button id="jira" onclick="filterGallery('jira')">Atlassian Forge: JiraQuest (2025)</button>
+        <button id="cyber" onclick="filterGallery('cyber')">Cybersecurity Escape Room (2024)</button>
+        <button id="pres" onclick="filterGallery('pres')">Presentation Builder (2024)</button>
+        <button id="find" onclick="filterGallery('find')">Find Your Friends (2023)</button>
+        <button id="sleep" onclick="filterGallery('sleep')">Sleep Buddies (2023)</button>
+      </div>
+
+      <div class="right">
+        <div class="gallery">
+          <div class="gallery-item jira">
+            <img src="images/jira.png" >
+            <p>
+              This collaborative project is a custom Atlassian Forge app that "game-fies" Jira. Users earn experience, collect coins, and customise their profile based on activity, transforming routine task management into a more engaging experience.
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript, react, git, figma</span>
+            </p>
+          </div>
+          <div class="gallery-item char">
+            <img src="images/profile.png">
+            <p>
+              This project is a character wiki designed as a faux early-2000s social media platform. Instead of a traditional encyclopedia layout, character information is distributed across profiles, logs, and posts, encouraging exploration.
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript</span>
+              <br><br>
+              Interaction demo:
+              <br><br>
+              <img src="images/profile.gif" style="width: 40%;">
+            </p>
+          </div>
+          <div class="gallery-item cyber">
+            <img src="images/er.png" >
+            <p>
+              This project is a lightweight educational website that introduces cybersecurity concepts using game-inspired interactions. Content is presented through challenges and feedback-driven UI elements, encouraging active learning rather than passive reading.
+              Play <a href="https://something-awesome.vercel.app/">here.</a>
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript, react, git</span>
+            </p>
+          </div>
+          <div class="gallery-item pres">
+            <img src="images/pr.png">
+            <p>
+              An interactive web-based tool that allows users to create presentation slides with custom text and images directly in the browser.
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript, react, git, mui</span>
+            </p>
+          </div>
+          <div class="gallery-item find">
+            <img src="images/23t2.png">
+            <p>
+              A web app designed to help students locate friends around campus and share real-time status updates, encouraging connection.
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript, react, git, figma</span>
+            </p>
+          </div>
+          <div class="gallery-item sleep">
+            <img src="images/23t1.png">
+            <p>
+              A gamified wellness app that motivates consistent sleep by rewarding timely sleep habits with virtual pets and providing consequences if routines are missed.
+              <br><br>
+              <span style="color: rgb(171, 171, 171)">html, css, javascript, react, git, figma</span>
+            </p>
+          </div>  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <footer>
+    <p>made by en 2025</p>
+  </footer>
+  <script src="sort.js"></script>
+</body>
+</html>
