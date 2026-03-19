@@ -1,0 +1,28 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  font-family: "VT323", "Helvetica";
+  font-size: large;
+  color: rgb(50, 50, 50);
+  justify-content: center;
+  margin: 5% 10%;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+  border: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ff2bbf;
+  transition: 0.3s ease-in-out;
+}
