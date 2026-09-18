@@ -3,8 +3,8 @@
 :root {
   --primary-color: #ff2bbf;
   --secondary-color: yellow;
-  --line-color: black;
-  --light-color: #ecf0f1;
+  --line-color: #333;
+  --light-color: white;
 }
 
 * {
@@ -19,7 +19,6 @@ body {
   align-items: center;
   font-size: large;
   color: var(--line-color);
-  box-sizing: border-box;
 }
 .main {
   margin: 2% 10% 0 10%;
@@ -34,7 +33,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background: var(--line-color);
-  border: 2px solid white;
+  border: 2px solid var(--light-color);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
@@ -47,12 +46,12 @@ body {
   justify-content: center;
 }
 .navbar-btn {
-  background-color: white;
+  background-color: var(--light-color);
   border: none;
   font-family: inherit;
   font-size: inherit;
   color: var(--line-color);
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: 5px solid var(--line-color);
   /* border-radius: 10px 10px 0 0; */
   width: 15%;
@@ -61,8 +60,8 @@ body {
   transition: 0.3s ease-in-out;
 }
 .navbar-btn:hover, .active {
-  padding: 5px 10px 10px 10px;
-  color: white;
+  padding: 10px 10px 15px 10px;
+  color: var(--light-color);
   /*border-color: #ff2bbf; */
   background-color: var(--primary-color);
 }
@@ -73,7 +72,7 @@ body {
 
 /* HOME */
 .container, .container-proj, .container-gallery, .container-about, .project-page {
-  background-color: white;
+  background-color: var(--light-color);
   position: relative;
   z-index: 1;
   flex-direction: row;
@@ -86,6 +85,14 @@ body {
 }
 .hello-image { 
   flex: 1; 
+}
+.profile-photo {
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.profile-photo:hover {
+  transform: rotate(360deg);
+  box-shadow: 0 0 30px var(--primary-color);
 }
 .hello-text {
   text-align: left;
@@ -156,9 +163,10 @@ a {
 footer {
   border-top: 5px solid var(--line-color);
   margin-top: 20px;
+  bottom: 0;
   padding: 20px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
 }
 
 .marquee-cont {
@@ -171,7 +179,7 @@ footer {
   gap: 10px;
   box-sizing: border-box;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
   letter-spacing: 4px;
   padding: 10px;
   mask-image: linear-gradient(to right, transparent 0%, var(--line-color) 20%, var(--line-color) 80%, transparent 100%);
@@ -322,12 +330,10 @@ figcaption {
   .main {
     margin: 5% 5% 0% 5%;
   }
-  .navbar {
-
-  }
   .navbar-btn {
     width: 25%;
     font-size: medium;
+    overflow-wrap: break-word;
   }
   .container {
     display: block;
@@ -336,18 +342,19 @@ figcaption {
   .hello-image {
     max-width: 100%;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .hello-text {
     display: block;
   }
   .hello-text h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
+    overflow-wrap: break-word;
   }
   .hello-text h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
   }
   .hello-text {
     margin-left: 0px;
@@ -355,14 +362,14 @@ figcaption {
   .group h1 {
     font-size: x-large;
   }
-  .gallery-item {
+  .card {
     display: block;
   }
-  .gallery-item img {
+  .card img {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
-  .gallery-item p {
+  .card p {
     margin-top: 0px;
     padding-left: 0px;
     /* border-bottom-left-radius: 20px;
@@ -373,7 +380,7 @@ figcaption {
     /* border-top: none;
     border-top-right-radius: 0px; */
   }
-  .gallery img {
+  .card img {
     width: 100%;
   }
 
@@ -381,20 +388,10 @@ figcaption {
     display: block;
   }
 
-  .project-modal-overlay {
-    padding: 20px;
-  }
-  .project-modal {
-    padding: 25px;
-  }
   .project-images {
     display: block;
   }
   .project-images img:not(:last-child) {
     margin-bottom: 10px;
-  }
-  .project-modal-close {
-    top: 5px;
-    right: 10px;
   }
 }
