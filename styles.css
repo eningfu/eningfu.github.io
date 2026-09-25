@@ -318,7 +318,7 @@ footer {
   transition: 0.3s;
 }
 figcaption {
-  margin-top: 8px;
+  margin: 8px;
   text-align: center;
   font-size: 0.9rem;
 }
