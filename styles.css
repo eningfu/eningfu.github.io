@@ -251,9 +251,24 @@ footer {
   display: block;
   text-align: left;
 }
-
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+.row:not(:last-child) {
+  margin-bottom: 10px;
+}
+.row img {
+  width: 10%;
+  /* aspect-ratio: 1 / 1; */
+  object-fit: cover;
+  margin-right: 10px;
+}
 .about-sec:not(:last-child) {
   margin-bottom: 10px;
+}
+.row .about-sec {
+  margin-bottom: 0;
 }
 
 /* PROJECTS */
