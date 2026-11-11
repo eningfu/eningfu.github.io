@@ -3,7 +3,7 @@
 :root {
   --primary-color: #ff2bbf;
   --secondary-color: yellow;
-  --line-color: #333;
+  --line-color: #09182B;
   --light-color: white;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 .parallax {
   position: relative;
-  background-image: url("images/log\ in.gif");
+  background-image: url("assets/banner.gif");
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -110,6 +110,13 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.1);
+}
+.parallax {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.parallax.page-loaded {
+  opacity: 1;
 }
 .hello-image { 
   flex: 1; 
@@ -172,7 +179,7 @@ a {
 }
 .group {
   width: 50%;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .group:not(:last-child) {
   border-right: 5px solid var(--line-color);
@@ -230,6 +237,13 @@ footer {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Arranges multiple images in a responsive grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
 }
 
 /* ABOUT */
@@ -348,6 +362,13 @@ figcaption {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: xx-large;
+}
+.project-title a {
+  font-size: medium;
+  font-weight: normal;
+}
+.project-title a:hover {
+  text-decoration: underline;
 }
 .project-images {
   display: grid;
